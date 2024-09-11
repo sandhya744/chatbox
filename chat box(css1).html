@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con{
+            border: 1px solid black;
+            
+            height: 70vh;
+            width:30vw;
+            overflow-y: auto;
+            background-image: url("../assets/wallpaper2.jpg");
+            background-repeat: no-repeat;
+            background-size: 400px;
+        }
+        .name{
+            background-color:crimson;
+            height: 30px;
+            width:412px;
+            font-size:20px;
+        }
+        .sun{
+            
+            background-color: aqua;
+            border-radius: 5px;
+            height:20px;
+            width:90px;
+            text-align: center;
+             margin-left:150px;
+             position: sticky;
+             top:10px;
+        }
+        .s1{
+            
+            border-radius: 5px;
+            height: 20px;
+            width: 20px;
+            text-align: center;
+            position: relative;
+            left: 2px;
+            background-color:rgb(8, 68, 117);
+            color: white;
+            
+
+        }
+        .s2{
+            
+            border-radius:5px;
+            height: 20px;
+            width: 100px;
+            position: relative;
+            left:290px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .s3{
+            
+            border-radius: 5px;
+            height: 20px;
+            width: 140px;
+            position: relative;
+            left: 2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .s4{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:38px;
+            position: relative;
+            left:350px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .mon{
+            
+            background-color: aqua;
+            border-radius: 5px;
+            height:20px;
+            width:90px;
+            text-align: center;
+             margin-left:150px;
+            position: sticky;
+            top:10px;
+        }
+        .m1{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:60px;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .m2{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:50px;
+            position: relative;
+            left:340px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .m3{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:57px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .m4{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:57px;
+            position: relative;
+            left:333px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .m5{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:75px;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .m6{
+           
+            border-radius: 5px;
+            height: 20px;
+            width:77px;
+            position: relative;
+            left:313px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .m7{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:145px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .m8{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:220px;
+            text-align: center;
+            position: relative;
+            left:170px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .m9{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:70px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .tues{
+            
+            background-color: aqua;
+            border-radius: 5px;
+            height:20px;
+            width:90px;
+            text-align: center;
+             margin-left:150px;
+            position: sticky;
+            top:10px;
+        }
+        .t1{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:30px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .t2{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:200px;
+            text-align: center;
+            position: relative;
+            left:190px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .t3{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:50px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .t4{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:40px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            top:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .wed{
+            
+            background-color: aqua;
+            border-radius: 5px;
+            height:20px;
+            width:90px;
+            text-align: center;
+             margin-left:150px;
+            position: sticky;
+            top:10px;
+        }
+        .w1{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:50px;
+            text-align: center;
+            position: relative;
+            left:335px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .w2{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:100px;
+            text-align: center;
+            position: relative;
+            left:290px;
+            top: 2px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .w3{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:130px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .w4{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:140px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            top: 2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .w5{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:130px;
+            text-align: center;
+            position: relative;
+            left:260px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .w6{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:50px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .yes{
+            
+            background-color: aqua;
+            border-radius: 5px;
+            height:20px;
+            width:120px;
+            text-align: center;
+             margin-left:150px;
+            position: sticky;
+            top:10px;
+        }
+        .y1{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:90px;
+            text-align: center;
+            position: relative;
+            left:300px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .y2{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:40px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .y3{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:250px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            top: 2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .y4{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:120px;
+            text-align: center;
+            position: relative;
+            left:270px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .tod{
+            
+            background-color: aqua;
+            border-radius: 5px;
+            height:20px;
+            width:100px;
+            text-align: center;
+             margin-left:150px;
+            position: sticky;
+            top:10px;
+        }
+        .to1{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:110px;
+            text-align: center;
+            position: relative;
+            left:280px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .to2{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:100px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .to3{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:30px;
+            text-align: center;
+            position: relative;
+            left:360px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .to4{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:90px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .to5{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:60px;
+            text-align: center;
+            position: relative;
+            left:330px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .to6{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:90px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .to7{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:130px;
+            text-align: center;
+            position: relative;
+            left:260px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .to8{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:30px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .to9{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:110px;
+            text-align: center;
+            position: relative;
+            left:2px;
+            top: 2px;
+            color: white;
+            background-color:rgb(8, 68, 117);
+        }
+        .to10{
+           
+            border-radius: 5px;
+            height: 20px;
+            width:70px;
+            text-align: center;
+            position: relative;
+            left:320px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+        }
+        .to11{
+            
+            border-radius: 5px;
+            height: 20px;
+            width:50px;
+            text-align: center;
+            position: relative;
+            left:340px;
+            top: 2px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.808);
+            
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="name"><pre>Ajay brother💕</pre></div>
+    <div class="con">
+        <div class="sun">sun 10:40am</div>
+        <div class="s1">Hi</div>
+        <div class="s2">hiee how r u...?</div>
+        <div class="s3">im fine wt about u...?</div>
+        <div class="s4">good</div>
+        <div class="mon">mon 1:45pm</div>
+        <div class="m1">thinnava</div>
+        <div class="m2">ha ...nv</div>
+        <div class="m3">m curry</div>
+        <div class="m4">alu..urs</div>
+        <div class="m5">same pinch</div>
+        <div class="m6">wt r u dng</div>
+        <div class="m7">nthg...its very boring</div>
+        <div class="m8">achoo...will u play carrom vth me</div>
+        <div class="m9">yeah sure</div>
+        <div class="tues">tue 6:09pm</div>
+        <div class="t1">hi</div>
+        <div class="t2">i have some work...so i can't</div>
+        <div class="t3">its ok</div>
+        <div class="t4">bye</div>
+        <div class="wed">wed 8:34pm</div>
+        <div class="w1">hello</div>
+        <div class="w2">m chestunnv</div>
+        <div class="w3">work chestunna...</div>
+        <div class="w4">i will cht vth u later</div>
+        <div class="w5">OKKK carry on....</div>
+        <div class="w6">ok bye</div>
+        <div class="yes">yesterday 8:00am</div>
+        <div class="y1">Good mrng</div>
+        <div class="y2">vgm</div>
+        <div class="y3">cllg ki velthunna i will cht vth u later</div>
+        <div class="y4">ok jagrathaaa</div>
+        <div class="tod">today 4:30pm</div>
+        <div class="to1">hello...busy ah</div>
+        <div class="to2">no busy m led</div>
+        <div class="to3">ok </div>
+        <div class="to4">haa but bye</div>
+        <div class="to5">y soooo</div>
+        <div class="to6">m led byee</div>
+        <div class="to7">any prblm vth me</div>
+        <div class="to8">no</div>
+        <div class="to9">don't irritate me</div>
+        <div class="to10">ok sorry</div>
+        <div class="to11">Byee</div>
+
+        
+
+
+        </div>
+</body>
+</html>
